@@ -537,7 +537,7 @@ function initToasterNotifications() {
         toast.innerHTML = `
             <div class="toast-avatar" aria-hidden="true">${initial}</div>
             <div class="toast-details">
-                <span class="toast-message"><strong>${name}</strong> (${city}) secure <strong>${qty} Bundle</strong>! 🔥</span>
+                <span class="toast-message"><strong>${name}</strong> (${city}) mengamankan <strong>${qty} Nightfall Bundle</strong>! 🔥</span>
                 <span class="toast-time">${time}</span>
             </div>
         `;
