@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    
+    <!-- SEO Optimization -->
+    <title>ALCHAPONE — System Drop Vol.01 | Nightfall Bundle Rp 99.000</title>
+    <meta name="description" content="Tiga gear streetwear premium dalam satu bundle taktis. Cap bordir 3D, waistbag nylon heavy-duty, dompet kulit premium. Harga Rp 99.000 — terbatas 100 pieces.">
+    <meta name="theme-color" content="#05020b">
+    
+    <!-- OpenGraph Metadata -->
+    <meta property="og:title" content="ALCHAPONE — System Drop Vol.01">
+    <meta property="og:description" content="Own the night. Nightfall Bundle — Cap + Waistbag + Wallet. Rp 99.000.">
+    <meta property="og:image" content="all-item.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Third-party Interactive Engines (GSAP, ScrollTrigger, SplitText, Lenis) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+    <!-- Failsafe: if CDN libraries fail or are offline, reveal static content -->
+    <script>
+    (function() {
+        setTimeout(function() {
+            document.querySelectorAll('.rev, .rev-l, .rev-s').forEach(function(el) {
+                if (parseFloat(window.getComputedStyle(el).opacity) < 0.3) {
+                    el.style.cssText += 'opacity:1!important;transform:none!important;';
+                }
+            });
+        }, 2500);
+    })();
+    </script>
+</head>
+<body>
+
+    <!-- Atmospheric Mesh & Noise Background -->
+    <div class="ambient" aria-hidden="true">
+        <div class="ambient-orb"></div>
+        <div class="ambient-orb"></div>
+        <div class="ambient-orb"></div>
+    </div>
+
+    <!-- Desktop Customized Cursor -->
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <!-- Floating Live Purchase Notification Stack (Mobile-Optimized) -->
+    <div class="toaster-stack" id="toasterStack" aria-live="polite"></div>
+
+    <!-- Sticky Bottom CTA Action Bar -->
+    <div class="sticky-cta" id="stickyCta" role="complementary" aria-label="Order cepat">
+        <div class="sticky-cta-left">
+            <span class="sticky-cta-title">ALCHAPONE — System Bundle</span>
+            <span class="sticky-cta-sub">
+                <span class="hi">⚠ Sisa <span class="stockVal">23</span> pcs</span> &nbsp;·&nbsp; Rp 99.000
+            </span>
+        </div>
+        <button class="sticky-cta-btn open-checkout-btn">Order Sekarang →</button>
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav id="mainNav" role="navigation" aria-label="Main navigation">
+            <div class="nav-logo">
+                ALCHAPONE
+                <span class="nav-badge">LIVE</span>
+            </div>
+            <div class="nav-links">
+                <a href="#arsenal">Arsenal</a>
+                <a href="#proof">Review</a>
+                <button class="nav-cta open-checkout-btn">Dapatkan Sekarang →</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" aria-label="Alchapone Nightfall Drop">
+            <div class="hero-video-wrap">
+                <video autoplay muted loop playsinline aria-hidden="true" preload="auto" poster="all-item.png">
+                    <source src="alchapone-ready.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-mesh-fallback" aria-hidden="true"></div>
+            <div class="hero-grain" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <!-- Active Live Drop indicator -->
+                <div class="hero-live-badge" id="heroLiveBadge" aria-label="Live drop in progress">
+                    <span class="hero-live-dot"></span>
+                    Drop Aktif — Batch 01
+                    &nbsp;·&nbsp;
+                    <span id="liveSold"><span class="stockVal">23</span> dari 100 tersisa</span>
+                </div>
+
+                <div class="hero-eyebrow" id="heroEyebrow">
+                    <span class="hero-eyebrow-line" aria-hidden="true"></span>
+                    System Drop // Batch 01 // Nightfall Bundle
+                </div>
+                <h1 class="hero-headline" id="heroH">
+                    OWN<br>THE<br><em>NIGHT.</em>
+                </h1>
+                <div class="hero-meta" id="heroMeta">
+                    <span class="hero-meta-item">
+                        <span class="ico">🧢</span> Cap Bordir 3D
+                    </span>
+                    <span class="hero-meta-sep" aria-hidden="true"></span>
+                    <span class="hero-meta-item">
+                        <span class="ico">🎒</span> Waistbag Taktis
+                    </span>
+                    <span class="hero-meta-sep" aria-hidden="true"></span>
+                    <span class="hero-meta-item">
+                        <span class="ico">💼</span> Long Wallet Premium
+                    </span>
+                </div>
+                <p class="hero-sub" id="heroSub">
+                    Satu bundle taktis yang menggabungkan tiga aksesori streetwear kelas atas.
+                    Cap bordir 3D, waistbag nylon heavy-duty, dompet kulit premium — semuanya
+                    dalam satu harga yang, jujur saja, terlalu murah.
+                </p>
+                <div class="hero-actions" id="heroActions">
+                    <button class="btn-primary magnetic open-checkout-btn" id="heroCTA">
+                        Dapatkan Bundle Ini <span class="btn-arrow">→</span>
+                    </button>
+                    <a href="#arsenal" class="btn-ghost magnetic">Lihat Produknya</a>
+                </div>
+            </div>
+
+            <!-- Social confirmation block -->
+            <div class="hero-proof" id="heroProof">
+                <div class="hero-avatars">
+                    <div class="hero-avatar">RZ</div>
+                    <div class="hero-avatar">DK</div>
+                    <div class="hero-avatar">FA</div>
+                    <div class="hero-avatar">YT</div>
+                </div>
+                <div class="hero-proof-text">
+                    <strong><span class="purchaserVal">77</span> pembeli pertama</strong><br>
+                    sudah secure bundle ini
+                </div>
+            </div>
+
+            <!-- Animated scroll arrow indicator -->
+            <div class="scroll-arrow" id="scrollArrow" aria-hidden="true">
+                <span></span>
+                <span class="scroll-arrow-label">Scroll</span>
+            </div>
+        </section>
+
+        <!-- ===== URGENCY TICKER MARQUEE ===== -->
+        <div class="urgency-strip" aria-hidden="true">
+            <div class="ticker-track">
+                <span class="ticker-item"><span class="tk-dot"></span> <span class="tk-red">⚠ Sisa <span class="stockVal">23</span> pieces</span></span>
+                <span class="ticker-item"><span class="tk-dot"></span> System Drop Vol.01 sedang berjalan</span>
+                <span class="ticker-item"><span class="tk-dot"></span> <span class="tk-hi">Harga Rp 99.000 — batch pertama saja</span></span>
+                <span class="ticker-item"><span class="tk-dot"></span> Cap + Waistbag + Wallet dalam satu order</span>
+                <span class="ticker-item"><span class="tk-dot"></span> <span class="tk-red">Stok tidak diisi ulang dengan harga ini</span></span>
+                <span class="ticker-item"><span class="tk-dot"></span> Gratis ongkir ke Jogja area</span>
+                <span class="ticker-item"><span class="tk-dot"></span> <span class="tk-hi">Alchapone Nightfall Bundle — Rp 99.000</span></span>
+                <!-- Duplication for looping track -->
+                <span class="ticker-item"><span class="tk-dot"></span> <span class="tk-red">⚠ Sisa <span class="stockVal">23</span> pieces</span></span>
+                <span class="ticker-item"><span class="tk-dot"></span> System Drop Vol.01 sedang berjalan</span>
+                <span class="ticker-item"><span class="tk-dot"></span> <span class="tk-hi">Harga Rp 99.000 — batch pertama saja</span></span>
+                <span class="ticker-item"><span class="tk-dot"></span> Cap + Waistbag + Wallet dalam satu order</span>
+                <span class="ticker-item"><span class="tk-dot"></span> <span class="tk-red">Stok tidak diisi ulang dengan harga ini</span></span>
+                <span class="ticker-item"><span class="tk-dot"></span> Gratis ongkir ke Jogja area</span>
+                <span class="ticker-item"><span class="tk-dot"></span> <span class="tk-hi">Alchapone Nightfall Bundle — Rp 99.000</span></span>
+            </div>
+        </div>
+
+        <!-- ===== COUNTDOWN & STOCK SECTION ===== -->
+        <div class="countdown-section" role="timer" aria-live="polite" aria-label="Countdown timer">
+            <div class="countdown-inner">
+                <div class="cd-left">
+                    <span class="cd-title">// Harga Special Berakhir Dalam</span>
+                    <span class="cd-subtitle">Batch 01 — Nightfall Drop</span>
+                </div>
+
+                <div class="cd-units" aria-label="Sisa waktu">
+                    <div class="cd-block">
+                        <span class="cd-num" id="cd-h">02</span>
+                        <span class="cd-label-sm">Jam</span>
+                    </div>
+                    <span class="cd-sep" aria-hidden="true">:</span>
+                    <div class="cd-block">
+                        <span class="cd-num" id="cd-m">14</span>
+                        <span class="cd-label-sm">Menit</span>
+                    </div>
+                    <span class="cd-sep" aria-hidden="true">:</span>
+                    <div class="cd-block">
+                        <span class="cd-num" id="cd-s">59</span>
+                        <span class="cd-label-sm">Detik</span>
+                    </div>
+                </div>
+
+                <div class="cd-right">
+                    <div class="cd-stock-bar">
+                        <span class="cd-stock-label">Stok hampir habis</span>
+                        <div class="stock-track" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" aria-label="23 dari 100 stok tersisa">
+                            <div class="stock-fill" id="stockBarFill"></div>
+                        </div>
+                        <span class="cd-stock-count"><strong class="stockVal">23</strong> / 100 pieces tersisa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== WHY SECTION (Masalah & Solusi) ===== -->
+        <section class="why-section" aria-labelledby="whyHeadline">
+            <div class="container">
+                <div class="section-label rev">// Masalah & Solusi</div>
+                <div class="why-grid">
+                    <div class="why-left">
+                        <h2 class="section-headline" id="whyHeadline">
+                            LO BAWA TERLALU BANYAK <em>BARANG.</em>
+                        </h2>
+                        <p class="rev" style="transition-delay:.08s">
+                            Kantong celana penuh, tas berantakan, outfit rapi tapi
+                            aksesorinya kayak dagangan kaki lima. Serius, ini masalah nyata
+                            yang kebanyakan orang tidak mau ngakuin.
+                        </p>
+                        <ul class="pain-list" role="list">
+                            <li class="pain-item rev" style="transition-delay:.12s">
+                                <span class="pain-icon" aria-hidden="true">⚡</span>
+                                <div class="pain-text">
+                                    <strong>Waistbag Tactical Nylon</strong>
+                                    <span>D-ring besi solid + multi-kompartemen. Semua esensial masuk rapi — tetap terorganisir walau lo riding malam.</span>
+                                </div>
+                            </li>
+                            <li class="pain-item rev" style="transition-delay:.17s">
+                                <span class="pain-icon" aria-hidden="true">👑</span>
+                                <div class="pain-text">
+                                    <strong>Cap Bordir 3D Premium</strong>
+                                    <span>Kanvas hitam matte terstruktur, logo skrip putih 3D tebal. Bukan print biasa — ini bordir yang terlihat mewah dari jarak berapa pun.</span>
+                                </div>
+                            </li>
+                            <li class="pain-item rev" style="transition-delay:.22s">
+                                <span class="pain-icon" aria-hidden="true">💼</span>
+                                <div class="pain-text">
+                                    <strong>Long Wallet Kulit Bertekstur</strong>
+                                    <span>Kulit premium debossed logo, cokelat tua. Saat lo keluarkan dompet ini, orang tahu siapa yang berkelas.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="why-right rev-l" style="transition-delay:.06s">
+                        <div class="why-img-stack">
+                            <img src="cap.png"
+                                 alt="Alchapone Tactical Cap dengan bordir 3D putih di atas beton"
+                                 class="why-img-main"
+                                 loading="lazy"
+                                 width="400" height="400">
+                            <img src="wallet.png"
+                                 alt="Alchapone Premium Leather Long Wallet kulit cokelat bertekstur"
+                                 class="why-img-sub"
+                                 loading="lazy"
+                                 width="400" height="400">
+                            <img src="waistbag.png"
+                                 alt="Alchapone Tactical Waistbag nylon dengan D-ring besi"
+                                 class="why-img-accent"
+                                 loading="lazy"
+                                 width="400" height="400">
+                            <div class="why-float-badge">
+                                <span class="num">3-in-1</span>
+                                <span class="lbl">Full Gear System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRODUCTS / ARSENAL SECTION ===== -->
+        <section class="products-section" id="arsenal" aria-labelledby="arsenalHeadline">
+            <div class="container">
+                <div class="section-label rev">// The Arsenal</div>
+                <h2 class="section-headline rev" id="arsenalHeadline" style="transition-delay:.06s">
+                    GEAR LO<br><em>UPGRADED.</em>
+                </h2>
+                <p class="section-sub rev" style="transition-delay:.1s">
+                    Tiga komponen. Satu bundle. Satu harga yang tidak masuk akal murahnya.
+                </p>
+            </div>
+
+            <div class="container">
+                <!-- BUNDLE HERO CARD -->
+                <div class="bundle-card rev" style="transition-delay:.08s">
+                    <div class="bundle-card-img-wrap">
+                        <img
+                            src="all-item.png"
+                            alt="Alchapone Nightfall Bundle — Wallet, Cap, dan Waistbag di atas beton basah dengan cahaya neon"
+                            loading="lazy"
+                            width="1200" height="600"
+                        >
+                    </div>
+                    <div class="bundle-card-body">
+                        <div class="bundle-card-info">
+                            <span class="bundle-tag">// The Complete System</span>
+                            <h3 class="bundle-name">Nightfall Bundle Vol. 01</h3>
+                            <p class="bundle-desc">Wallet kulit, cap bordir 3D, waistbag taktis nylon — tiga gear eksklusif dalam satu drop. Harga ini hanya untuk Batch 01.</p>
+                        </div>
+                        <div>
+                            <div class="bundle-price">
+                                <span class="orig">Rp 299.000</span>
+                                <span class="curr">Rp 99.000</span>
+                                <span class="discount-chip">Hemat 67%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Individual Cards Snapping Slider -->
+                <div class="product-cards-scroll" id="productCarousel">
+                    <div class="product-cards-grid">
+
+                        <article class="product-card rev" style="transition-delay:.1s">
+                            <span class="card-num" aria-hidden="true">01</span>
+                            <div class="product-card-img-wrap">
+                                <img
+                                    src="cap.png"
+                                    alt="Alchapone Tactical Cap — bordir 3D putih tebal, kanvas hitam terstruktur"
+                                    loading="lazy"
+                                    width="400" height="500"
+                                >
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-tag">Headwear</span>
+                                <h3 class="product-name">Tactical Cap</h3>
+                                <p class="product-desc">Kanvas hitam matte terstruktur. Bordir 3D putih tebal yang langsung kelihatan premium dari pandangan pertama.</p>
+                                <div class="product-specs">
+                                    <span class="spec-chip">3D Embroidery</span>
+                                    <span class="spec-chip">Structured</span>
+                                    <span class="spec-chip">Adjustable</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card rev" style="transition-delay:.15s">
+                            <span class="card-num" aria-hidden="true">02</span>
+                            <div class="product-card-img-wrap">
+                                <img
+                                    src="waistbag.png"
+                                    alt="Alchapone Tactical Waistbag — nylon heavy-duty, D-ring besi, buckle quick-release"
+                                    loading="lazy"
+                                    width="400" height="500"
+                                >
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-tag">Utility</span>
+                                <h3 class="product-name">Tactical Waistbag</h3>
+                                <p class="product-desc">Nylon heavy-duty kelas outdoor, besi D-ring solid, buckle quick-release. Multi-zip yang fungsional tanpa mengorbankan estetika.</p>
+                                <div class="product-specs">
+                                    <span class="spec-chip">Tactical Nylon</span>
+                                    <span class="spec-chip">D-Ring Steel</span>
+                                    <span class="spec-chip">Multi-Pocket</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card rev" style="transition-delay:.2s">
+                            <span class="card-num" aria-hidden="true">03</span>
+                            <div class="product-card-img-wrap">
+                                <img
+                                    src="wallet.png"
+                                    alt="Alchapone Premium Leather Long Wallet — kulit bertekstur cokelat tua, logo debossed"
+                                    loading="lazy"
+                                    width="400" height="500"
+                                >
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-tag">Personal</span>
+                                <h3 class="product-name">Premium Wallet</h3>
+                                <p class="product-desc">Kulit tekstur premium cokelat tua. Logo debossed dalam, format panjang multi-slot. Keluarkan ini dan orang akan memperhatikan.</p>
+                                <div class="product-specs">
+                                    <span class="spec-chip">Textured Leather</span>
+                                    <span class="spec-chip">Debossed Logo</span>
+                                    <span class="spec-chip">Multi-Slot</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                
+                <!-- Swiper Dots Navigation Indicator -->
+                <div class="slider-dots" id="carouselDots" aria-hidden="true">
+                    <span class="slider-dot active" data-index="0"></span>
+                    <span class="slider-dot" data-index="1"></span>
+                    <span class="slider-dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VALUE BREAKDOWN (Kenapa Ini Masuk Akal) ===== -->
+        <section class="value-section" aria-labelledby="valueHeadline">
+            <div class="container">
+                <div class="section-label rev">// Kenapa Ini Masuk Akal</div>
+                <h2 class="section-headline rev" id="valueHeadline" style="transition-delay:.06s">
+                    ANGKA YANG<br><em>JUJUR.</em>
+                </h2>
+                <div class="value-grid">
+                    <div class="value-card rev-s" style="transition-delay:.08s">
+                        <div class="value-number">3×</div>
+                        <div class="value-label">Lebih efisien dari beli satuan</div>
+                        <p class="value-desc">Cap, waistbag, wallet beli terpisah bisa mencapai <strong>Rp 150.000–200.000</strong>. Bundle ini: satu transaksi, tiga gear, harga yang tidak wajar.</p>
+                    </div>
+                    <div class="value-card rev-s" style="transition-delay:.13s">
+                        <div class="value-number">100</div>
+                        <div class="value-label">Pieces — Batch 01 saja</div>
+                        <p class="value-desc">Sengaja dibatasi. Kalau semua orang pakai, nilainya turun. Ini <strong>eksklusif by design</strong> — bukan gimmick marketing biasa.</p>
+                    </div>
+                    <div class="value-card rev-s" style="transition-delay:.18s">
+                        <div class="value-number">1</div>
+                        <div class="value-label">Order, semua gear selesai</div>
+                        <p class="value-desc">Tidak perlu riset panjang untuk <strong>tiga aksesori berbeda</strong>. Satu keputusan, satu pembayaran, satu pengiriman — selesai.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOCIAL PROOF / BENTO ===== -->
+        <section class="proof-section" id="proof" aria-labelledby="proofHeadline">
+            <div class="container">
+                <div class="section-label rev">// Kenapa Alchapone</div>
+                <h2 class="section-headline rev" id="proofHeadline" style="transition-delay:.06s">
+                    BARANG INI<br>NGOMONG<br><em>SENDIRI.</em>
+                </h2>
+
+                <div class="bento-grid">
+
+                    <!-- Stat 1 -->
+                    <div class="bento-card c2 rev-s" style="transition-delay:.06s">
+                        <div class="bento-big-num">Rp 99K</div>
+                        <div class="bento-label">Harga First Drop</div>
+                        <p class="bento-text">Tiga piece premium untuk harga yang bikin orang merasa <em>ditipu dalam artian yang baik</em>. Ini hanya berlaku untuk batch pertama.</p>
+                    </div>
+
+                    <!-- Testimonial 1 -->
+                    <div class="bento-card c4 rev-s" style="transition-delay:.1s">
+                        <div class="bento-label">// Dari pembeli nyata</div>
+                        <div class="bento-star-row" aria-label="Rating 5 bintang">
+                            <span class="bento-star" aria-hidden="true">★</span>
+                            <span class="bento-star" aria-hidden="true">★</span>
+                            <span class="bento-star" aria-hidden="true">★</span>
+                            <span class="bento-star" aria-hidden="true">★</span>
+                            <span class="bento-star" aria-hidden="true">★</span>
+                        </div>
+                        <p class="bento-quote">Kirain barangnya biasa aja. Pas dipegang langsung beda. Bordir topinya tebal, tas-nya berat dan solid. Worth banget buat harga segini — jujur gue kaget.</p>
+                        <div class="avatar-row">
+                            <div class="avatar" aria-hidden="true">RZ</div>
+                            <div class="avatar-info">
+                                <strong>Rizal — @rzkl.yt</strong>
+                                <span>Skena Bandung · First Buyer Batch 01</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shot image -->
+                    <div class="bento-card c3 rev-s" style="transition-delay:.08s">
+                        <div class="bento-label">// Full bundle shot</div>
+                        <img src="all-item.png"
+                             alt="Alchapone Nightfall Bundle — semua item"
+                             class="bento-img"
+                             loading="lazy">
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="bento-card c3 rev-s" style="transition-delay:.12s">
+                        <div class="bento-big-num">67%</div>
+                        <div class="bento-label">Hemat vs beli satuan</div>
+                        <p class="bento-text">Harga retail estimasi tiga item terpisah: <strong>Rp 270.000+</strong>. Harga bundle: Rp 99.000. Selisihnya cukup untuk makan seminggu.</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bento-card c3 rev-s" style="transition-delay:.14s">
+                        <div class="bento-label">// Material insight</div>
+                        <div class="bento-star-row" aria-label="Rating 5 bintang">
+                            <span class="bento-star" aria-hidden="true">★</span>
+                            <span class="bento-star" aria-hidden="true">★</span>
+                            <span class="bento-star" aria-hidden="true">★</span>
+                            <span class="bento-star" aria-hidden="true">★</span>
+                            <span class="bento-star" aria-hidden="true">★</span>
+                        </div>
+                        <p class="bento-quote">Nylon waistbag-nya dari kelas yang sama dengan gear outdoor — bukan nylon tipis tas distro biasa. Dompetnya pun tidak mengecewakan.</p>
+                        <div class="avatar-row">
+                            <div class="avatar" aria-hidden="true">DK</div>
+                            <div class="avatar-info">
+                                <strong>Dika — @dkstreet_id</strong>
+                                <span>Jogja · Reseller Batch 01</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FINAL CTA BOX ===== -->
+        <section class="cta-section" aria-labelledby="ctaHeadline">
+            <div class="container">
+                <div class="cta-box rev-s">
+                    <span class="cta-eyebrow">// First Drop — Batch 01 // Terbatas 100 Pieces</span>
+                    <h2 class="cta-headline" id="ctaHeadline">
+                        SECURE<br>YOUR <em>GEAR.</em>
+                    </h2>
+                    <p class="cta-sub">
+                        Batch 01 hampir habis. Lo tidak akan menyesal — tapi lo pasti akan
+                        menyesal kalau kehabisan saat harga masih segini.
+                    </p>
+
+                    <div class="cta-price-row">
+                        <span class="price-orig">Rp 299.000</span>
+                        <span class="price-current">Rp 99.000</span>
+                        <span class="price-tag">Hemat 67%</span>
+                    </div>
+
+                    <div class="cta-includes" role="list">
+                        <span class="cta-inc-item" role="listitem">
+                            <span class="cta-inc-check" aria-hidden="true">✓</span>
+                            Tactical Cap 3D Embroidery
+                        </span>
+                        <span class="cta-inc-item" role="listitem">
+                            <span class="cta-inc-check" aria-hidden="true">✓</span>
+                            Nylon Waistbag Heavy-Duty
+                        </span>
+                        <span class="cta-inc-item" role="listitem">
+                            <span class="cta-inc-check" aria-hidden="true">✓</span>
+                            Premium Leather Long Wallet
+                        </span>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <button class="btn-primary magnetic open-checkout-btn" id="ctaBtnMain">
+                            Order Sekarang — Rp 99.000 <span class="btn-arrow">→</span>
+                        </button>
+                        <a href="https://wa.me/6281234567890" class="btn-ghost magnetic" target="_blank" rel="noopener noreferrer">
+                            Chat WhatsApp Dulu
+                        </a>
+                    </div>
+
+                    <p class="cta-guarantee">
+                        <span>✓</span> Konfirmasi via WhatsApp dalam 1×24 jam &nbsp;·&nbsp;
+                        <span>✓</span> Pengiriman dari Jogja ke seluruh Indonesia &nbsp;·&nbsp;
+                        <span>✓</span> Barang terjamin original dari produsen langsung
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STATIC FALLBACK ORDER FORM (SEO / Accessible Desktop option) ===== -->
+        <section class="form-section" id="order" aria-labelledby="formHeadline">
+            <div class="container">
+                <div class="section-label rev">// Terminal Checkout</div>
+
+                <div class="form-grid">
+                    <div class="form-left rev-l">
+                        <h3 id="formHeadline">KAMI KIRIM<br>LANGSUNG KE<br><em>KAMU.</em></h3>
+                        <p>
+                            Isi form ini dan orderan kamu akan kami proses serta konfirmasi langsung
+                            via WhatsApp. Simpel, cepat, dan bisa dilacak dari awal hingga akhir.
+                        </p>
+                        <div class="trust-badges" role="list">
+                            <div class="trust-item" role="listitem">
+                                <span class="trust-icon" aria-hidden="true">🔒</span>
+                                <div class="trust-text">
+                                    <strong>Transaksi Aman</strong>
+                                    <span>Transfer BCA / GoPay / ShopeePay / COD Jogja tersedia</span>
+                                </div>
+                            </div>
+                            <div class="trust-item" role="listitem">
+                                <span class="trust-icon" aria-hidden="true">📦</span>
+                                <div class="trust-text">
+                                    <strong>Packing Rapi & Aman</strong>
+                                    <span>Dikirim dari Jogja ke seluruh Indonesia via JNE / J&T</span>
+                                </div>
+                            </div>
+                            <div class="trust-item" role="listitem">
+                                <span class="trust-icon" aria-hidden="true">⚡</span>
+                                <div class="trust-text">
+                                    <strong>Konfirmasi Cepat</strong>
+                                    <span>Kami respons via WhatsApp dalam 1×24 jam</span>
+                                </div>
+                            </div>
+                            <div class="trust-item" role="listitem">
+                                <span class="trust-icon" aria-hidden="true">🏭</span>
+                                <div class="trust-text">
+                                    <strong>Produsen Langsung</strong>
+                                    <span>Tidak ada perantara — langsung dari sumber, harga paling fair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clean Fallback Form -->
+                    <div class="order-form rev" style="transition-delay:.1s">
+                        <div class="form-title">// Form Pemesanan — Alchapone System Bundle</div>
+                        <form id="orderForm" onsubmit="submitFallbackOrder(event)" novalidate>
+                            <div class="fgroup">
+                                <label for="inp-name">Nama Lengkap</label>
+                                <input type="text" id="inp-name" placeholder="Nama lengkap kamu" required autocomplete="name">
+                            </div>
+                            <div class="fgroup">
+                                <label for="inp-wa">Nomor WhatsApp</label>
+                                <input type="tel" id="inp-wa" placeholder="08xxxxxxxxxx" required autocomplete="tel" inputmode="tel">
+                            </div>
+                            <div class="fgroup">
+                                <label for="inp-addr">Alamat Pengiriman Lengkap</label>
+                                <textarea id="inp-addr" placeholder="Jalan, RT/RW, Kelurahan, Kota, Provinsi, Kode Pos" required></textarea>
+                            </div>
+                            <div class="fgroup-row">
+                                <div class="fgroup">
+                                    <label for="inp-qty">Jumlah Bundle</label>
+                                    <select id="inp-qty">
+                                        <option value="1 Bundle (Rp 99.000)">1 Bundle — Rp 99.000</option>
+                                        <option value="2 Bundle (Rp 190.000)">2 Bundle — Rp 190.000</option>
+                                        <option value="3 Bundle (Rp 280.000)">3 Bundle — Rp 280.000</option>
+                                        <option value="Grosir / Reseller (min. 5 pcs)">Grosir / Reseller (DM dulu)</option>
+                                    </select>
+                                </div>
+                                <div class="fgroup">
+                                    <label for="inp-pay">Metode Pembayaran</label>
+                                    <select id="inp-pay">
+                                        <option>Transfer BCA</option>
+                                        <option>GoPay / ShopeePay</option>
+                                        <option>COD (Jogja area)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="form-submit" id="formSubmitBtn">
+                                Kirim Order via WhatsApp →
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== REDESIGNED PREMIUM BOTTOM SHEET DRAWER ===== -->
+    <div class="bottom-sheet-overlay" id="sheetOverlay" aria-hidden="true"></div>
+    <div class="bottom-sheet" id="checkoutSheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+        <div class="sheet-header">
+            <div class="sheet-drag-handle"></div>
+            <span class="sheet-title" id="sheetTitle">// Terminal Checkout</span>
+            <button class="sheet-close" id="sheetCloseBtn" aria-label="Close checkout">&times;</button>
+        </div>
+        
+        <div class="sheet-content">
+            <form id="sheetOrderForm" onsubmit="submitSheetOrder(event)" novalidate>
+                
+                <!-- Dynamic quantities chip row -->
+                <div class="fgroup">
+                    <label>Pilih Jumlah Bundle</label>
+                    <div class="qty-chips-container" id="qtyChips">
+                        <div class="qty-chip active" data-qty="1" data-desc="1 Bundle — Rp 99.000" data-price="99000" data-saving="0">
+                            <span class="qty-title">1 Bundle</span>
+                            <span class="qty-sub">Rp 99K</span>
+                        </div>
+                        <div class="qty-chip" data-qty="2" data-desc="2 Bundle — Rp 190.000" data-price="190000" data-saving="8000">
+                            <span class="qty-title">2 Bundle</span>
+                            <span class="qty-sub">Rp 190K</span>
+                        </div>
+                        <div class="qty-chip" data-qty="3" data-desc="3 Bundle — Rp 280.000" data-price="280000" data-saving="17000">
+                            <span class="qty-title">3 Bundle</span>
+                            <span class="qty-sub">Rp 280K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input group definitions -->
+                <div class="fgroup" id="group-sheet-name">
+                    <label for="sheet-name">Nama Lengkap</label>
+                    <input type="text" id="sheet-name" placeholder="Nama lengkap kamu" required autocomplete="name">
+                </div>
+                
+                <div class="fgroup" id="group-sheet-wa">
+                    <label for="sheet-wa">Nomor WhatsApp</label>
+                    <input type="tel" id="sheet-wa" placeholder="08xxxxxxxxxx" required autocomplete="tel" inputmode="tel">
+                </div>
+                
+                <div class="fgroup" id="group-sheet-addr">
+                    <label for="sheet-addr">Alamat Pengiriman Lengkap</label>
+                    <textarea id="sheet-addr" placeholder="Jalan, RT/RW, Kelurahan, Kecamatan, Kota, Provinsi, Kode Pos" required></textarea>
+                </div>
+
+                <div class="fgroup">
+                    <label for="sheet-pay">Metode Pembayaran</label>
+                    <select id="sheet-pay">
+                        <option>Transfer BCA</option>
+                        <option>GoPay / ShopeePay</option>
+                        <option>COD (Jogja area)</option>
+                    </select>
+                </div>
+
+                <!-- Real-time dynamic calculator details -->
+                <div class="order-summary-box">
+                    <div class="summary-row">
+                        <span class="label">Nightfall Bundle Vol. 01</span>
+                        <span class="val" id="summaryQtyText">1 Bundle</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="label">Harga Normal</span>
+                        <span class="val" id="summaryOrigPrice" style="text-decoration: line-through; color: var(--muted2);">Rp 299.000</span>
+                    </div>
+                    <div class="summary-row" id="summarySavingRow" style="display: none;">
+                        <span class="label">Diskon Tambahan</span>
+                        <span class="val green" id="summarySavingText">Hemat Rp 0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="label">Diskon Spesial</span>
+                        <span class="val green">Hemat 67%</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span class="label">Total Pembayaran</span>
+                        <span class="val" id="summaryTotalPrice">Rp 99.000</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="form-submit" id="sheetSubmitBtn" style="margin-top: 1.5rem;">
+                    Kirim Order via WhatsApp →
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div>
+                <div class="footer-logo">ALCHAPONE</div>
+                <div class="footer-tagline">// Urban Tactical Streetwear — Jogja</div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-text">© 2026 <span>ALCHAPONE SYNDICATE</span> — All Rights Reserved</div>
+                <div class="footer-links">
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="#order">Order</a>
+                    <a href="#arsenal">Arsenal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Redesign Script Engine -->
+    <script src="app.js"></script>
+</body>
+</html>
